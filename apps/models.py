@@ -40,4 +40,8 @@ class Pembayaran(models.Model):
     cara_bayar = models.CharField(max_length=1, choices=CARABAYAR_CHOICES)
     nilai = models.DecimalField(max_digits=12, decimal_places=2)
 
-
+class Konsumen(models.Model):
+    nama = models.CharField(max_length=50)
+    alamat = models.CharField(max_length=200)
+    telepon = models.CharField(max_length=50)
+    sms = models.CharField(max_length=50)
